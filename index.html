@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Cooperative YENNA BEAUTY</title>
+
+  <!-- Font Awesome CDN -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+  />
+  
+  <link rel="stylesheet" href="css.css" />
+  <script src="vv.js"></script>
+</head>
+<body>
+
+  <!-- الهيدر -->
+  <header>
+    <div class="lang-select">
+      <select id="lang-selector" aria-label="اختر اللغة">
+        <option value="ar" selected>العربية</option>
+        <option value="fr">Français</option>
+        <option value="en">English</option>
+      </select>
+    </div>
+    <div class="search-box">
+      <input type="text" id="search-input" placeholder="ابحث عن منتج..." aria-label="بحث عن منتج" />
+      <button id="search-btn" aria-label="بحث"><i class="fa fa-search"></i></button>
+    </div>
+    <div class="logo">
+      <img src="image/logo sofyan.jpg" alt="شعار التعاونية" />
+    </div>
+  </header>
+
+  <!-- رسالة تسويقية -->
+  <section class="hero">
+    <h1>Produits naturels à base sur plusieur produits locaux Zafran, Rose, Argan, Figue de barbarie</h1>
+    <p>Découvrez les bienfaits de la lavande pour la santé et la beauté avec nos produits naturels soigneusement sélectionnés.</p>
+  </section>
+
+  <!-- كتالوج المنتجات -->
+  <section class="catalogue">
+    <h2><i class="fa fa-seedling"></i> Catalogue des produits</h2>
+    <div class="products" id="products-list">
+
+      <div class="product" data-name="زيت الخزامى">
+        <img src="image/Crème hydratante à l’huile d’argan.jpg" alt="زيت الخزامى" />
+        <h3>Crème hydratante à l’huile d’argan</h3>
+        <p class="price">50 درهم</p>
+        <div class="rating">
+          <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-alt"></i>
+        </div>
+      </div>
+
+      <div class="product" data-name="صابون طبيعي">
+        <img src="image/Sérum anti-âge à la rose beldi.jpg" alt="صابون طبيعي" />
+        <h3>Sérum anti-âge à la rose beldi</h3>
+        <p class="price">90 درهم</p>
+        <div class="rating">
+          <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-alt"></i>
+        </div>
+      </div>
+
+      <div class="product" data-name="ماء الخزامى">
+        <img src="image/shambo miel.jpg" alt="ماء الخزامى" />
+        <h3>Shampooing de mile</h3>
+        <p class="price">60 درهم</p>
+        <div class="rating">
+          <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+        </div>
+      </div>
+
+      <div class="product" data-name="كريم الخزامى">
+        <img src="image/Masque purifiant au ghassoul et argile vert.jpg" alt="كريم الخزامى" />
+        <h3>Masque purifiant au ghassoul et argile vert</h3>
+        <p class="price">25 درهم</p>
+        <div class="rating">
+          <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+        </div>
+      </div>
+
+  
+  </section>
+
+  <!-- الشهادات -->
+  <section class="certifications">
+    <h2><i class="fa fa-certificate"></i> Les certificats</h2>
+    <div class="certificates">
+      <img src="image/onssa-removebg-preview.png" alt="شهادة جودة" />
+      <img src="image/bio_label-removebg-preview.png" alt="شهادة عضوية" />
+      <img src="image/iso-removebg-preview.png" alt="شهادة طبيعية" />
+    </div>
+  </section>
+
+  <!-- تقييمات العملاء -->
+  <section class="reviews">
+    <h2><i class="fa fa-users"></i> Avis des clients</h2>
+    <div class="review-item">
+      <img src="image/1.jpg" alt="عميل 1" />
+      <p>"Des produits merveilleux et de haute qualité, je les recommande vivement."</p>
+      <div class="rating">
+        <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+      </div>
+    </div>
+    <div class="review-item">
+      <img src="image/2.jpg" alt="عميل 2" />
+      <p>"Excellente expérience et service rapide"</p>
+      <div class="rating">
+        <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-alt"></i>
+      </div>
+    </div>
+  </section>
+
+  <!-- اتصل بنا -->
+  <section class="contact">
+    <h2><i class="fa fa-envelope"></i> Contactez-nous</h2>
+    <form id="contact-form">
+      <label for="name">Nom :</label>
+      <input type="text" id="name" required />
+      <label for="email">Email :</label>
+      <input type="email" id="email" required />
+      <label for="message">Le message :</label>
+      <textarea id="message" rows="4" required></textarea>
+      <button type="submit">Envoi</button>
+    </form>
+    <div class="contact-info">
+      <p><i class="fa fa-phone"></i>212 654-434707+</p>
+      <p><i class="fa fa-map-marker-alt"></i> N10, Ouarzazate 45000, maroc </p>
+      <p><i class="fa fa-clock"></i> Samedi - Jeudi : 9h00 - 17h00</p>
+    </div>
+  <div id="map">
+  <iframe
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1711.1050667338502!2d-6.962065159963959!3d30.93669519783915!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xdbb1af92b356ea7%3A0xc0a26fb219e9bae1!2sN10%2C%20Ouarzazate%2045000!5e0!3m2!1sfr!2sma!4v1748194576422!5m2!1sfr!2sma"
+    width="100%"
+    height="100%"
+    style="border:0;"
+    allowfullscreen=""
+    loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade">
+  </iframe>
+</div>
+<!-- وسائل التواصل الاجتماعي -->
+<footer class="social-footer">
+ <div class="social-icons">
+      <a href="https://www.facebook.com/yenna.beauty.2025" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://www.instagram.com/yenna_beaut?igsh=MTl3dnQxc3VsemIzMw==" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+      <a href="https://wa.me/212 654-434707" target="_blank" aria-label="WhatsApp">
+      <i class="fab fa-whatsapp"></i>
+    </div>
+  <p>&copy; 2025 Tous droits réservés à Cooperative YENNA BEAUTY</p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
