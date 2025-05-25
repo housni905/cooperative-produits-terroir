@@ -1,0 +1,293 @@
+/* عام */
+* {
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #f2f8f5;
+  color: #2c3e50;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+/* الهيدر */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #2c3e50;
+  color: white;
+  padding: 15px 20px;
+  border-radius: 8px;
+  margin-bottom: 30px;
+}
+
+.lang-select select {
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: none;
+  font-size: 1rem;
+}
+
+.search-box {
+  flex-grow: 1;
+  margin: 0 20px;
+  display: flex;
+}
+
+.search-box input {
+  flex-grow: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 5px 0 0 5px;
+  font-size: 1rem;
+}
+
+.search-box button {
+  background:#6c1866 ;
+  border: none;
+  padding: 0 15px;
+  cursor: pointer;
+  border-radius: 0 5px 5px 0;
+  color: white;
+  font-size: 1.2rem;
+}
+
+.search-box button:hover {
+  background:#6c1866;
+}
+
+.logo img {
+  height: 50px;
+}
+
+/* رسالة تسويقية */
+.hero {
+  text-align: center;
+  background: #6c1866;
+  padding: 40px 20px;
+  border-radius: 12px;
+  margin-bottom: 40px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.hero h1 {
+  font-size: 2.8rem;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  color: white;
+}
+
+/* كتالوج */
+.catalogue {
+  max-width: 1200px;
+  margin: 0 auto 50px;
+}
+
+.catalogue h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #145d50;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fill,minmax(220px,1fr));
+  gap: 25px;
+}
+
+.product {
+  background: white;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgb(0 0 0 / 0.1);
+  text-align: center;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.product:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgb(0 0 0 / 0.2);
+}
+
+.product img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.product h3 {
+  margin-bottom: 8px;
+  color: #145d50;
+}
+
+.price {
+  font-weight: bold;
+  color: #16a085;
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+}
+
+.rating {
+  color: #f39c12;
+  font-size: 1rem;
+}
+
+/* شهادات */
+.certifications {
+  max-width: 1000px;
+  margin: 0 auto 50px;
+  text-align: center;
+}
+
+.certifications h2 {
+  color: #145d50;
+  margin-bottom: 25px;
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.certificates img {
+  height: 90px;
+  margin: 0 15px;
+  vertical-align: middle;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.certificates img:hover {
+  transform: scale(1.05);
+}
+
+/* تقييمات العملاء */
+.reviews {
+  max-width: 900px;
+  margin: 0 auto 60px;
+}
+
+.reviews h2 {
+  color: #145d50;
+  margin-bottom: 25px;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.review-item {
+  background: white;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.review-item img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid #16a085;
+}
+
+.review-item p {
+  flex-grow: 1;
+  font-size: 1.1rem;
+  color: #2c3e50;
+}
+
+.review-item .rating {
+  color: #f39c12;
+  font-size: 1.2rem;
+}
+
+/* اتصل بنا */
+.contact {
+  max-width: 800px;
+  margin: 0 auto 60px;
+  padding: 20px;
+  background: #e9f4f1;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.1);
+}
+
+.contact h2 {
+  color: #145d50;
+  margin-bottom: 25px;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+form {
+  display: grid;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+form label {
+  font-weight: 600;
+  color: #145d50;
+}
+
+form input, form textarea {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1.5px solid #16a085;
+  font-size: 1rem;
+  resize: vertical;
+}
+
+form button {
+  background: #6c1866;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+form button:hover {
+  background: #13876b;
+}
+
+.contact-info p {
+  font-size: 1rem;
+  margin: 8px 0;
+  color: #2c3e50;
+}
+
+.contact-info i {
+  color: #16a085;
+  margin-left: 8px;
+}
+
+#map {
+  width: 100%;
+  height: 300px;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.1);
+}
